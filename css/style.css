@@ -123,7 +123,9 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .project_body{
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 16px;
+  margin-left: 60px;
+  margin-right: 60px;
   text-align: justify;
   font-family: 'VT323', monospace;
 }
