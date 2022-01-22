@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+
+      <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 
     <!-- data aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -19,28 +24,35 @@
     <title>Cienzo</title>
   </head>
   <body>
-    <nav>
+<!-- Nav Bar -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand disabled" href="#">Cienzo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" > 
+      <ul class="navbar-nav">
 
-  <input id="nav-toggle" type="checkbox">
-
-  <ul class="links">
-    <li ><a  href="#" style="color:black;">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Project</a></li>
-    <li><a href="#">Language</a></li>
-  </ul>
-  <label for="nav-toggle" class="icon-burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </label>
+        <li class="nav-item">
+          <a class="nav-link  nav-tex" href="#">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-tex" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-tex" href="#" tabindex="-1" aria-disabled="true">Language</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <!-- Paralax -->
 <div class="container-fluid" style="padding:0;">
   <div class="parallax">
     <div class="container">
       <center>
-        <p class="text-slogan"> Im still learning</p> 
+        <p class="text-slogan">Live what you love</p> 
         <a class="btn-explore button" href="#" role="button">PROJECTS</a>
       </center>
     </div>
@@ -48,78 +60,95 @@
 </div>
 <!-- Introduction -->
 <div class="container" data-aos="fade-up">
-  <div class="row">
-    <div class="col-9">
-      <p class="p_information" >
+  <div class="row" >
+    <div class=" col-md-3 order-md-1 ">
+      <img class="img_profile img-thumbnail" src="pictures/me.jpg" alt="My Formal Picture"/>
+    </div>
+    <div class=" col-md-9 order-md-2">
+      <p class="p_information " >
         I started loving technology when I was a child. I did many stuff like troubleshooting, photo and video editing for free  and it gives my teenage life  purposeful/meaningful. As a result, I become technophile and I pursued Information Technology in college and now I love coding and I think it runs through my blood. When I perform coding, it excites me to solve problem, learn new algorithm and  hopefully I use it when I'm given a chance to work with known companies and peopl in the future.
       </p>
-    </div>
-    <div class="col">
-      <img class="img_profile img-thumbnail" src="pictures/me.jpg" alt="My Formal Picture"/>
     </div>
   </div>
 </div>
 <!-- Projects -->
+
+<br><br>
 <div class="container">
-  <div class="container  ">
+  <div class="container ">
     <center>
-    <p class="title_header">ACADEMIC PROJECTS</p>
+    <p class="title_header">>>  ACADEMIC PROJECTS  <<</p>
     </center>
   </div>
   <div class="row">
-    <div class="col-5   no-padding" data-aos="fade-right">
-      <iframe width="470" height="250" src="https://www.youtube.com/embed/gozZTajwUn0?start=78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-6   no-padding" data-aos="fade-right">   <!--  -->
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/gozZTajwUn0?start=78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="col   text-wrap no-padding" data-aos="fade-left">
-      <h5 class="project_header" style="text-align:center;">Online Booking and Information Management
-       System with SMS Notification for Ridges and Clouds</h5>
-       <p class="project_body">This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col  no-padding" data-aos="fade-right">
+    <div class="col-md-6   text-wrap no-padding" data-aos="fade-left"> <!--  -->
       <h5 class="project_header" style="text-align:center;">
-        Online Booking and Information Management System with SMS Notification for Ridges and Clouds
+        Online Booking and Information ManagementSystem with SMS Notification for Ridges and Clouds
       </h5>
-      <p class="project_body">This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.</p>
-
-    </div>
-    <div class="col-5  text-wrap no-padding" data-aos="fade-left" >
-      <iframe width="470" height="250" style="float:right;"src="https://www.youtube.com/embed/iuWQQwfP99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-5   no-padding" data-aos="fade-right">
-      <iframe width="470" height="250" src="https://www.youtube.com/embed/IUzz-owV8PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div class="col   text-wrap no-padding" data-aos="fade-left">
-      <h5 class="project_header" style="text-align:center;">Online Booking and Information Management
-       System with SMS Notification for Ridges and Clouds</h5>
-       <p class="project_body">This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.</p>
+      <p class="project_body">
+        This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.
+        The project is available online with this link <a href="https://www.ridgeclouds.site/"></a>
+      </p>
     </div>
   </div>
-  <div class="row">
-    <div class="col  no-padding" data-aos="fade-right">
+  <div class="row ">
+    <div class="col-md-6  order-1 order-sm-2 order-md-2 order-lg-1 no-padding" data-aos="fade-right" > <!-- " -->
       <h5 class="project_header" style="text-align:center;">
-        Online Booking and Information Management System with SMS Notification for Ridges and Clouds
+        ADHOME MANILA WEBSITE WITH SQL DATABASE USING PHP
       </h5>
-      <p class="project_body">This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.</p>
-
+      <p class="project_body">This is my second year website project. The project goal is to promote Adhome Aanila tutoring service through online. The website use MySQL as database and PHP for the functionalities. It simply allows the students or potential customers to apply online for the tutoring service and the adhome of the website can confirm the students and monitor their records. For beginners the project has positive feedback because the design wasn't bad and the functionality is working although there's a lot of missing function.</p>
     </div>
-    <div class="col-5  text-wrap no-padding" data-aos="fade-left" >
-      <iframe width="470" height="250" src="https://www.youtube.com/embed/I4p_h8ottT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-6  order-2  order-sm-1 order-md-2 order-lg-2 text-wrap no-padding"  data-aos="fade-left"> <!--  -->
+      <div class="videoWrapper">
+        <iframe style="float:right;"src="https://www.youtube.com/embed/iuWQQwfP99g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-5   no-padding" data-aos="fade-right">
-      <iframe width="470" height="250" src="https://www.youtube.com/embed/nD0QO74jKnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="col-md-6   no-padding" data-aos="fade-right" >   <!--  -->
+      <div class="videoWrapper">
+        <iframe  src="https://www.youtube.com/embed/IUzz-owV8PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="col   text-wrap no-padding" data-aos="fade-left">
-      <h5 class="project_header" style="text-align:center;">Online Booking and Information Management
-       System with SMS Notification for Ridges and Clouds</h5>
-       <p class="project_body">This is a web application where you can manage the booking of customers and the information of the company. It provide easy access to the information of customers and a booking system which they can monitor the bookings status in one system only. The system can provide sales report, Calendar of the company and Notifications through email and phone number.</p>
+    <div class="col-md-6   text-wrap no-padding" data-aos="fade-left"> <!--  -->
+      <h5 class="project_header" style="text-align:center;">ADHOME MANILA APPLICATION USING JAVA WITH DATABASE CONNECTION</h5>
+       <p class="project_body">This project is created when im second year college. The project is to create a java application with database connection which is for us is so hard to do because our time is too little and we also have to selfstudy java database connection syntax. This is the output of our project which includes text field restrinction, transaction report, schedule, and record of a students. Afterall, the project looks goods and correctly working .Actually it's beyond from the code that our professor teach.</p>
     </div>
-  </div> 
+  </div>
+  <div class="row ">
+    <div class="col-md-6  order-1 order-sm-2 order-md-2 order-lg-1 no-padding" data-aos="fade-right"> <!--  -->
+      <h5 class="project_header" style="text-align:center;">
+       STOP MOTION ANIMATION USING ADOBE ANIMATE
+      </h5>
+      <p class="project_body">My second-year project was to use Adobe Animate to create a stop motion animation. It was my first time making animation; the tale was true to life, but the predominant language was Tagalog. On every frame, I used the mouse to sketch. This project has made me realize that I'm not very good at sketching, therefore I'll have to stick with coding.</p>
+    </div>
+    <div class="col-md-6  order-2  order-sm-1 order-md-2 order-lg-2 text-wrap no-padding"  data-aos="fade-left"> <!--  -->
+      <div class="videoWrapper">
+        <iframe src="https://www.youtube.com/embed/I4p_h8ottT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6   no-padding" data-aos="fade-right">   <!--  -->
+      <div class="videoWrapper">
+        <iframe  src="https://www.youtube.com/embed/nD0QO74jKnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6   text-wrap no-padding" data-aos="fade-left"> <!--  -->
+      <h5 class="project_header" style="text-align:center;">
+        HTML AND CSS BEGINNERS PROJECT: LOGITECH WEBSITE
+      </h5>
+      <p class="project_body">
+       This project is created when im in first year college. The goal of the project is to create basic static website using HTML and CSS. I did this with my groupmate and we decided to make our own logitech website since that time we love logitech projects.
+      </p>
+    </div>
+  </div>
+ 
 </div>
 <br><br>
 <!-- Paralax -->
@@ -135,49 +164,9 @@
 </div>
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="container ">
-            <div class="row ">
-              <div class="col-1 ">
-                 <i class="fas fa-map-marked vertical_center"></i>
-              </div>
-              <div class="col ">
-                <p class="main_info"> 18 N Eustaquio St, Octagon Village, Dela Paz, Pasig City </p>
-              </div>
-            </div>
-          </div>
-          <div class="container ">
-            <div class="row ">
-              <div class="col-1 ">
-                 <i class="fas fa-mail-bulk vertical_center"></i>
-              </div>
-              <div class="col ">
-                <p class="main_info">  Jeombrog@student.fatima.edu.ph <br> Jehuzzz143@Gmail.com </p>
-              </div>
-            </div>
-          </div>
-          <div class="container ">
-            <div class="row ">
-              <div class="col-1 ">
-                 <i class="fas fa-phone-volume vertical_center"></i>
-              </div>
-              <div class="col ">
-                <p class="main_info">  +639212765842 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col">
-          3213213
-        </div>
-        <div class="col">
-          213123
-        </div>
-      </div>
-    </div>
+
+
+
 <!--     <div style="background-color:red;height:1000px;">
       
     </div> -->
@@ -191,10 +180,7 @@
       });
 
     </script>
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   </body>
 </html>
