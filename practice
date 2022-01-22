@@ -116,3 +116,18 @@
         </div>
       </div>
     </div>
+
+
+
+
+    <!-- Paralax -->
+<div class="container-fluid" style="width:100%;" >
+  <div class="parallax_second" style="width:100%;">
+    <div class="container">
+      <center>
+      <!--   <p class="text-slogan_second"> ACADEMIC PROJECTS</p>  -->
+
+      </center>
+    </div>
+  </div>
+</div>

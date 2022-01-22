@@ -13,11 +13,13 @@
     <!-- data aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+    <!-- My CSS -->
 
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
 
+      <!-- CodingNepal jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Font Awesome -->
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -38,7 +40,7 @@
           <a class="nav-link  nav-tex" href="#">Introduction</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tex" href="#">Projects</a>
+          <a class="nav-link nav-tex" href="#project">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link nav-tex" href="#" tabindex="-1" aria-disabled="true">Language</a>
@@ -48,24 +50,24 @@
   </div>
 </nav>
 <!-- Paralax -->
-<div class="container-fluid" style="padding:0;">
+<div class="container-fluid " style="padding:0;">
   <div class="parallax">
     <div class="container">
       <center>
         <p class="text-slogan">Live what you love</p> 
-        <a class="btn-explore button" href="#" role="button">PROJECTS</a>
+        <a class="btn-explore button" href="#project" role="button">PROJECTS</a>
       </center>
     </div>
   </div>
 </div>
 <!-- Introduction -->
-<div class="container" data-aos="fade-up">
+<div class="container " data-aos="fade-up">
   <div class="row" >
     <div class=" col-md-3 order-md-1 ">
       <img class="img_profile img-thumbnail" src="pictures/me.jpg" alt="My Formal Picture"/>
     </div>
     <div class=" col-md-9 order-md-2">
-      <p class="p_information " >
+      <p class="p_information " id="project">
         I started loving technology when I was a child. I did many stuff like troubleshooting, photo and video editing for free  and it gives my teenage life  purposeful/meaningful. As a result, I become technophile and I pursued Information Technology in college and now I love coding and I think it runs through my blood. When I perform coding, it excites me to solve problem, learn new algorithm and  hopefully I use it when I'm given a chance to work with known companies and peopl in the future.
       </p>
     </div>
@@ -74,13 +76,13 @@
 <!-- Projects -->
 
 <br><br>
-<div class="container">
+<div class="container project_container " id="project_container">
   <div class="container ">
     <center>
-    <p class="title_header">>>  ACADEMIC PROJECTS  <<</p>
+    <p class="title_header" >>>  ACADEMIC PROJECTS  <<</p>
     </center>
   </div>
-  <div class="row">
+  <div class="row" >
     <div class="col-md-6   no-padding" data-aos="fade-right">   <!--  -->
       <div class="videoWrapper">
         <iframe src="https://www.youtube.com/embed/gozZTajwUn0?start=78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -149,22 +151,96 @@
       </p>
     </div>
   </div>
- 
+  
+</div>
+<div>
+  <center><button type="button" class="btn_see" id="see_more"><center>See More</center></button></center>
 </div>
 <br><br>
-<!-- Paralax -->
-<div class="container-fluid" style="width:100%;" >
-  <div class="parallax_second" style="width:100%;">
-    <div class="container">
-      <center>
-      <!--   <p class="text-slogan_second"> ACADEMIC PROJECTS</p>  -->
+<br><br>
+<script type="text/javascript">
+  var see = document.getElementById("see_more");
 
-      </center>
+  see.onclick = function() {
+    if (see.innerHTML == "See More") {
+
+      var project = document.getElementById("project_container"); 
+      project.classList.remove("project_container");
+      project.classList.add("project_container_expand");
+      see.innerHTML ="Less";
+
+    }else{
+      var project = document.getElementById("project_container");
+      project.classList.remove("project_container_expand");
+      project.classList.add("project_container");
+      see.innerHTML="See More";
+    }
+  };
+
+</script>
+<div class="container-fluid language d-flex align-items-center" id="language">
+  <div class="container border-4  vertical-center">
+    <div class="row ">
+      <div class="col coffee ">
+        <h4 data-target="1234" class="count">0</h3>
+        <p>CUP OF COFFEE<p>
+      </div>
+      <div class="col coffee">
+        <h4 data-target="6" class="count">0</h3>
+        <p>PROJECTS</p>
+      </div>
+      <div class="col coffee">
+        <h4 data-target="100" class="count">0</h3>
+        <p>CERTIFICATE</p>
+      </div>
+      <div class="col coffee">
+        <h4 data-target="20" class="count">0</h3>
+        <p>SEMINARS</p>
+      </div>
     </div>
+    
   </div>
 </div>
+<script>
+    window.addEventListener("scroll", function(event) {
 
+        var scroll_y = this.scrollY;
+        var scroll_x = this.scrollX;
 
+        if (scroll_y >= 800 && scroll_y <= 1500) {
+          const counters = document.querySelectorAll('.count');
+          const speed = 200;
+          counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const count = parseInt(counter.innerText);
+            if (count < target) {
+              counter.innerText = count + 1;
+              setTimeout(updateCount, 1);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+          });
+       
+        }else{
+
+          counter.innerText = 0;
+       
+        }
+       
+    });
+</script>
+
+<div class="container">
+  <div class="container">
+    <center>
+    <p class="title_header" >>>  PROGRAMMING LANGUAGES  <<</p>
+    </center>
+
+  </div>
+</div>
 
 
 
@@ -185,21 +261,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
+
+
   <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
+   <!--  <div id="fb-root"></div> -->
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
+<!--     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "108701511519895");
       chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+    </script> -->
 
     <!-- Your SDK code -->
-    <script>
+  <!--   <script>
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
@@ -214,6 +292,6 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
   </body>
 </html>
