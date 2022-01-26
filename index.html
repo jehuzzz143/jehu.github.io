@@ -393,8 +393,8 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
           });
        
         }else{
-
-          counter.innerText = 0;
+          const counters = document.querySelectorAll('.count');
+          counters.innerText = 0;
        
         }
 
@@ -407,11 +407,11 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
       if(scroll_y >= 20){
         var navigation = document.getElementById("navigation");
         navigation.classList.add("navigation_shadow");
-        avigation.classList.remove("navigation_shadow_remove");
+        navigation.classList.remove("navigation_shadow_remove");
       }else{
         var navigation = document.getElementById("navigation");
         navigation.classList.remove("navigation_shadow");
-        avigation.classList.add("navigation_shadow_remove");
+        navigation.classList.add("navigation_shadow_remove");
         
       }
     });
