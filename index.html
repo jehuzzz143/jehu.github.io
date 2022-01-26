@@ -27,7 +27,7 @@
   </head>
   <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light" id="navigation">
   <div class="container-fluid">
     <a class="navbar-brand disabled" href="#">Cienzo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
           <a class="nav-link nav-tex" href="#project">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-tex" href="#" tabindex="-1" aria-disabled="true">Language</a>
+          <a class="nav-link nav-tex" href="#skills" tabindex="-1" aria-disabled="true">Language</a>
         </li>
       </ul>
     </div>
@@ -201,39 +201,9 @@
     
   </div>
 </div>
-<script>
-    window.addEventListener("scroll", function(event) {
 
-        var scroll_y = this.scrollY;
-        var scroll_x = this.scrollX;
 
-        if (scroll_y >= 800 && scroll_y <= 1500) {
-          const counters = document.querySelectorAll('.count');
-          const speed = 200;
-          counters.forEach((counter) => {
-          const updateCount = () => {
-            const target = parseInt(counter.getAttribute('data-target'));
-            const count = parseInt(counter.innerText);
-            if (count < target) {
-              counter.innerText = count + 1;
-              setTimeout(updateCount, 1);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
-          });
-       
-        }else{
-
-          counter.innerText = 0;
-       
-        }
-       
-    });
-</script>
-
-<div class="container-fluid skill_background" >
+<div class="container-fluid skill_background" id="skills" >
   <div class="container ">
     <center>
     <p class="title_header" >  SKILLS  </p>
@@ -319,12 +289,133 @@
   </div>
 </div>
 
-<div class="footer">
-  <div class="container">
-    sdsds
-    
-  </div>
-</div>
+
+
+<!-- parallax -->
+  <!-- <div class="container-fluid" style="width:100%; padding:0;margin: 0;" >
+    <div class="container-fluid parallax_second" >
+      <div class="container">
+        <center>
+   
+
+        </center>
+      </div>
+    </div>
+  </div> -->
+
+
+<!-- footer -->
+
+
+    <footer class="footer-distributed hide" id="footer">
+ 
+      <div class="footer-left">
+ 
+        <h3>Cien<span>Zo</span></h3>
+ 
+        <p class="footer-links">
+          <a href="#">Introduction</a>
+          ·
+          <a href="#project">Projects</a>
+          ·
+          <a href="#skills">Lanauge</a>
+          ·
+         
+        </p>
+ 
+        <p class="footer-company-name">Jehu Ombrog &copy; 2022</p>
+      </div>
+ 
+      <div class="footer-center">
+ 
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Pasig City<span>Philippines </span> </p>
+        </div>
+ 
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+639212765842 </p>
+        </div>
+ 
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:jehuzzz143@Gmail.com">Jehuzzz143@gmail.com</a></p>
+        </div>
+ 
+      </div>
+ 
+      <div class="footer-right">
+ 
+        <p class="footer-company-about">
+          <span>Social Media Accounts</span>
+          There is a time for everything,
+and a season for every activity under the heavens.  &amp; SEO Learner.
+        </p>
+ 
+        <div class="footer-icons">
+ 
+          <a href="https://www.facebook.com/profile.php?id=100011525882686" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/in/jehu-ombrog-a16637216/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/jencnzo/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/jehuzzz143" target="_blank"><i class="fab fa-github-square"></i></a>
+ 
+        </div>
+ 
+      </div>
+ 
+    </footer>
+
+
+
+<!--  -->
+<script>
+    window.addEventListener("scroll", function(event) {
+
+        var scroll_y = this.scrollY;
+        var scroll_x = this.scrollX;
+
+        if (scroll_y >= 800 && scroll_y <= 1500) {
+          const counters = document.querySelectorAll('.count');
+         
+          counters.forEach((counter) => {
+          const updateCount = () => {
+            const target = parseInt(counter.getAttribute('data-target'));
+            const count = parseInt(counter.innerText);
+            if (count < target) {
+              counter.innerText = count + 1;
+              setTimeout(updateCount, 50);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+          });
+       
+        }else{
+
+          counter.innerText = 0;
+       
+        }
+
+      if(scroll_y >= 800){
+        var footer = document.getElementById("footer");
+        footer.classList.add("unhide");
+        footer.classList.remove("hide");
+      }
+
+      if(scroll_y >= 20){
+        var navigation = document.getElementById("navigation");
+        navigation.classList.add("navigation_shadow");
+        avigation.classList.remove("navigation_shadow_remove");
+      }else{
+        var navigation = document.getElementById("navigation");
+        navigation.classList.remove("navigation_shadow");
+        avigation.classList.add("navigation_shadow_remove");
+        
+      }
+    });
+</script>
 
 
 
@@ -348,20 +439,20 @@
 
 
   <!-- Messenger Chat Plugin Code -->
-   <!--  <div id="fb-root"></div> -->
+    <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
-<!--     <div id="fb-customer-chat" class="fb-customerchat">
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 
     <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "108701511519895");
       chatbox.setAttribute("attribution", "biz_inbox");
-    </script> -->
+    </script>
 
     <!-- Your SDK code -->
-  <!--   <script>
+    <script>
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
@@ -376,6 +467,6 @@
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script> -->
+    </script>
   </body>
 </html>

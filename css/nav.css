@@ -11,9 +11,19 @@ nav {
   background-color:white;
   //-webkit-box-shadow: 0px 16px 27px -10px rgba(0,0,0,0.3); 
   //box-shadow: 0px 16px 27px -10px rgba(0,0,0,0.3);
-
+  transition: all 1s ease !important;
 }
 
+.navigation_shadow{
+  /*height: 0px !important;*/
+  transition: all 1s ease !important;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px !important;
+}
+.navigation_shadow_remove{
+  /*height: 0px !important;*/
+  transition: all 1s ease !important;
+  box-shadow: none !important;
+}
 nav .navbar-brand{
   font-size: 40px;
 }

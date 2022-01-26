@@ -29,12 +29,14 @@ html{
   /* The image used */
   background-image: url("../pictures/p2.jpg");
   /* Set a specific height */
-  min-height: 200px;
+  min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 .text-slogan{
@@ -46,6 +48,7 @@ html{
    background: -webkit-linear-gradient(#FFFFFF,black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
 }
 .text-slogan_second{
   font-family: 'Press Start 2P', cursive;
@@ -235,7 +238,7 @@ background: linear-gradient(0deg, rgba(249,249,249,1) 0%, rgba(142,236,255,0.773
 .skill_background{
 background: rgb(233,233,233);
 background: linear-gradient(0deg, rgba(233,233,233,0.47942927170868344) 0%, rgba(249,249,249,1) 75%);
-margin-top: -30px;
+margin-top: 0px;
 padding-top: 50px;
 padding-bottom: 50px;
 
@@ -307,4 +310,197 @@ transform: skew(0deg,3deg); /* Standard syntax */
     margin-top: 5px;
   }
 
+}
+
+
+/* footer */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  
+  bottom: 0;
+}
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+//  font: bold 16px sans-serif;
+font-family: 'VT323', monospace;
+  padding: 55px 50px;
+  margin-top: px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font-family: 'VT323', monospace;
+  margin: 0;
+  font-size: 50px;
+}
+/*Cienzo*/
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+
+}
+
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+/* Jehu Ombrog  */
+
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+/*icon*/
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+/*envelope icon*/
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:17px;
+  line-height:1;
+}
+/*philippine*/
+
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+/*under social media*/
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 25px;
+  
+  margin-bottom: 5px;
+}
+/*Social Media*/
+
+.footer-distributed .footer-icons{
+  margin-top: 20px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+  .main {
+    line-height: normal;
+    font-size: auto;
+  }
+
+}
+
+.hide{
+  transition: all 1s ease;
+  display: none;
+}
+.unhide{
+  transition: all 1s ease;
+  display: block;
 }
