@@ -10,6 +10,23 @@ font-family: 'Press Start 2P', cursive;*/
 html{
   scroll-behavior: smooth;
 }
+#particles-js{
+  z-index:10;
+
+  background-image: url("../pictures/p1.png");
+  
+  /* Set a specific height */
+  height: 500px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .parallax {
   /* The image used */
   background-image: url("../pictures/p1.png");
@@ -43,12 +60,14 @@ html{
   font-family: 'Bungee Shade', cursive;
   font-size: 4.5rem;
   padding-top: 180px;
+  z-index:1;
   color:black;
   text-shadow: 20px 20px 70px rgba(150, 150, 150, 0.54);
    background: -webkit-linear-gradient(#FFFFFF,black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  position:relative;
 
 }
 .text-slogan_second{
@@ -57,11 +76,12 @@ html{
   padding-top: 75px;
   color:black;
   text-shadow: 20px 20px 70px rgba(150, 150, 150, 0.54);
-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
 .btn-explore{
+  position:relative;
   font-family: 'VT323', monospace;
   font-size: 2.3rem;
   background-color: white;
@@ -98,6 +118,13 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 .p_information {
   margin:1.4rem;
   font-size: 1.4rem;
+  text-align: justify;
+  font-family: 'VT323', monospace;
+}
+.p_information_head {
+  margin:1.4rem;
+  font-weight: bold;
+  font-size: 1.8rem;
   text-align: justify;
   font-family: 'VT323', monospace;
 }
@@ -164,7 +191,7 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .project_body{
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 60px;
   margin-right: 60px;
   text-align: justify;
@@ -291,9 +318,7 @@ transform: skew(0deg,3deg); /* Standard syntax */
     display: hidden;
     opacity: 0;
   }
-  body{
-    //color: red;
-  }
+
   .project_container{
     overflow: hidden;
     height: 800px ;
@@ -331,7 +356,7 @@ footer{
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-//  font: bold 16px sans-serif;
+
 font-family: 'VT323', monospace;
   padding: 55px 50px;
   margin-top: px;

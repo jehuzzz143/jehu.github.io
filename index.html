@@ -51,15 +51,15 @@
   </div>
 </nav>
 <!-- Paralax -->
-<div class="container-fluid " style="padding:0;">
-  <div class="parallax">
-    <div class="container">
+
+<div id="particles-js"  style="padding:0;">
+  <div class="actual-content-container" >
       <center>
-        <p class="text-slogan">Live what you love</p> 
+        <p class="text-slogan"> Live what you love</span></p> 
         <a class="btn-explore button" href="https://jehuzzz143.github.io/jehu.github.io/Jehu_CV.pdf" download="Jehu_CV" role="button" target="_blank">Download CV</a>
       </center>
-    </div>
   </div>
+
 </div>
 <!-- Introduction -->
 <div class="container " data-aos="fade-up">
@@ -68,9 +68,12 @@
       <img class="img_profile img-thumbnail" src="pictures/me.jpg" alt="My Formal Picture"/>
     </div>
     <div class=" col-md-9 order-md-2">
+      <p class="p_information_head"  >Hello I'm Jehu and I do <span class="auto-type" style="text-transform: uppercase;color:red;"></span></p>
       <p class="p_information " id="project">
-        I started loving technology when I was a child. I did many stuff like troubleshooting, photo and video editing for free  and it gives my teenage life  purposeful. As a result, I became technophile and I pursued Information Technology in college and now I love coding and I think it runs through my blood. When I perform coding, it excites me to solve problem, learn new algorithm and  hopefully I use it when I'm given a chance to work with known companies and peopl in the future.
+        
+        I started loving technology when I was a child. I did many stuff like troubleshooting, photo and video editing for free  and it gives my teenage life  purposeful. As a result, I became technophile and I pursued Information Technology in college and now I love coding and I think it runs through my blood. When I perform coding, it excites me to solve problem, learn new algorithm and  hopefully I can use it when I'm given a chance to work with known companies or people in the future.
       </p>
+      
     </div>
   </div>
 </div>
@@ -282,6 +285,22 @@
             </center> 
           </div>
         </div>
+        <div class="col col-lg-2 border-primary skills_box" data-aos="flip-right">
+          <div class="p-2 m-3">
+            <center>
+            <img class="skills_image" src="pictures/vue.png" alt="CSS logo">
+            <p class="skills_title">Vueks</p>
+            </center> 
+          </div>
+        </div>
+        <div class="col col-lg-2 border-primary skills_box" data-aos="flip-right">
+          <div class="p-2 m-3">
+            <center>
+            <img class="skills_image" src="pictures/react.png" alt="CSS logo">
+            <p class="skills_title">Reactjs</p>
+            </center> 
+          </div>
+        </div>
 
       </div>
     </center>
@@ -421,7 +440,10 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
 
 
 <!--  -->
+<script src="particles.js"></script>
+<script src="app.js"></script>
 <script>
+
     window.addEventListener("scroll", function(event) {
 
         var scroll_y = this.scrollY;
@@ -478,7 +500,15 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
 
     <!-- Optional JavaScript -->
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: [ "Web Coding Tutorials", "Creating Web Responsive Designs", "Web Hosting", "Short Videos"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            Loop: true,
+            })
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
