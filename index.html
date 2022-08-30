@@ -1,25 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-
-      <!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- dsds -->
-
-
     <!-- data aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <!-- My CSS -->
-
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/style.css">
-
-      <!-- CodingNepal jquery -->
+    <!-- CodingNepal jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <!-- Font Awesome -->
 
@@ -59,7 +51,6 @@
         <a class="btn-explore button" href="https://jehuzzz143.github.io/jehu.github.io/Jehu_CV.pdf" download="Jehu_CV" role="button" target="_blank">Download CV</a>
       </center>
   </div>
-
 </div>
 <!-- Introduction -->
 <div class="container " data-aos="fade-up">
@@ -78,7 +69,6 @@
   </div>
 </div>
 <!-- Projects -->
-
 <br><br>
 <div class="container project_container " id="project_container">
   <div class="container ">
@@ -127,7 +117,6 @@
     </div>
   </div>
   <div class="row ">
-    
     <div class="col-xs-6 col-md-6  order-xs-1  order-sm-1 order-md-2 order-lg-2 text-wrap no-padding"  data-aos="fade-left"> <!--  -->
       <div class="videoWrapper">
         <iframe src="https://www.youtube.com/embed/I4p_h8ottT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -155,7 +144,6 @@
       </p>
     </div>
   </div>
-  
 </div>
 <div>
   <center><button type="button" class="btn_see" id="see_more"><center>See More</center></button></center>
@@ -164,15 +152,12 @@
 <br><br>
 <script type="text/javascript">
   var see = document.getElementById("see_more");
-
   see.onclick = function() {
     if (see.innerHTML == "See More") {
-
       var project = document.getElementById("project_container"); 
       project.classList.remove("project_container");
       project.classList.add("project_container_expand");
       see.innerHTML ="Less";
-
     }else{
       var project = document.getElementById("project_container");
       project.classList.remove("project_container_expand");
@@ -180,7 +165,6 @@
       see.innerHTML="See More";
     }
   };
-
 </script>
 <div class="container-fluid language d-flex align-items-center" id="language">
   <div class="container border-4  vertical-center">
@@ -202,7 +186,6 @@
         <p>SEMINARS</p>
       </div>
     </div>
-    
   </div>
 </div>
 
@@ -218,7 +201,6 @@
         <div class="col col-lg-2 border-primary skills_box" data-aos="flip-left">
           <div class="p-2 m-3"  >
             <center>
-
             <img class="skills_image img-fluid" src="pictures/html.png" alt="html logo">
             <p class="skills_title">HTML</p>
             </center> 
@@ -306,7 +288,7 @@
     </center>
     </div>
 
-  </div><!-- fdfdfdsfdfsfsdfds -->
+  </div>
 </div>
 
 <!-- gallery -->
@@ -362,22 +344,8 @@
   
 </div>
 
-<!-- parallax -->
-  <!-- <div class="container-fluid" style="width:100%; padding:0;margin: 0;" >
-    <div class="container-fluid parallax_second" >
-      <div class="container">
-        <center>
-   
-
-        </center>
-      </div>
-    </div>
-  </div> -->
-
 
 <!-- footer -->
-
-
     <footer class="footer-distributed hide" id="footer">
  
       <div class="footer-left">
@@ -425,33 +393,23 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
         </p>
  
         <div class="footer-icons">
- 
           <a href="https://www.facebook.com/profile.php?id=100011525882686" target="_blank"><i class="fab fa-facebook-square"></i></a>
           <a href="https://www.linkedin.com/in/jehu-ombrog-a16637216/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.instagram.com/jencnzo/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://github.com/jehuzzz143" target="_blank"><i class="fab fa-github-square"></i></a>
- 
         </div>
- 
       </div>
- 
     </footer>
-
-
 
 <!--  -->
 <script src="particles.js"></script>
 <script src="app.js"></script>
 <script>
-
     window.addEventListener("scroll", function(event) {
-
         var scroll_y = this.scrollY;
         var scroll_x = this.scrollX;
-
         if (scroll_y >= 800 && scroll_y <= 1500) {
           const counters = document.querySelectorAll('.count');
-         
           counters.forEach((counter) => {
           const updateCount = () => {
             const target = parseInt(counter.getAttribute('data-target'));
@@ -469,15 +427,12 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
         }else{
           const counters = document.querySelectorAll('.count');
           counters.innerText = 0;
-       
         }
-
       if(scroll_y >= 800){
         var footer = document.getElementById("footer");
         footer.classList.add("unhide");
         footer.classList.remove("hide");
       }
-
       if(scroll_y >= 20){
         var navigation = document.getElementById("navigation");
         navigation.classList.add("navigation_shadow");
@@ -486,20 +441,10 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
         var navigation = document.getElementById("navigation");
         navigation.classList.remove("navigation_shadow");
         navigation.classList.add("navigation_shadow_remove");
-        
       }
     });
 </script>
-<!-- gallery -->
-
-
-
-<!--     <div style="background-color:red;height:1000px;">
-      
-    </div> -->
-
     <!-- Optional JavaScript -->
-
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-type",{
@@ -515,8 +460,6 @@ and a season for every activity under the heavens.  &amp; SEO Learner.
         offset:200,
         duration:1000
       });
-
-
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
